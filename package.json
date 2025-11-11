@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "mocha-junit-reporter": "^2.2.1"
+  }
 }
