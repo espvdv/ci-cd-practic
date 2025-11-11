@@ -1,0 +1,13 @@
+{
+  "name": "ci-cd-practical",
+  "version": "1.0.0",
+  "description": "CI/CD Practical Work",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "mkdir -p dist && cp index.js dist/ && echo 'Build complete' > dist/build.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
