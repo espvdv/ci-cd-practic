@@ -1,19 +1,12 @@
+const assert = require('assert');
 const { hello } = require('./index.js');
 
-console.log('Running tests...');
-
-if (hello() === "Hello, CI/CD!") {
-    console.log('✅ Test 1 passed: hello() returns correct string');
-} else {
-    console.log('❌ Test 1 failed');
-    process.exit(1);
-}
-
-if (typeof hello === 'function') {
-    console.log('✅ Test 2 passed: hello is a function');
-} else {
-    console.log('❌ Test 2 failed');
-    process.exit(1);
-}
-
-console.log('All tests passed! 🎉');
+describe('Hello function tests', function() {
+  it('should return "Hello, CI/CD!"', function() {
+    assert.strictEqual(hello(), "Hello, CI/CD!");
+  });
+  
+  it('should be a function', function() {
+    assert.strictEqual(typeof hello, 'function');
+  });
+});
